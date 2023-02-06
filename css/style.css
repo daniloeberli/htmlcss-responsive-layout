@@ -221,7 +221,7 @@ Main
         display: flex;
     }
 
-    #about-us .col{
-        width: 50%;
+    #about-us .col >{
+        width: 70%;
     }
 }
