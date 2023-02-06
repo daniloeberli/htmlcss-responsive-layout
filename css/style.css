@@ -1,0 +1,37 @@
+/*
+Reset
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: ;
+    --first-color-light: ;
+    --secondary-colo: ;
+}
+
+/*
+Common
+*/
+
+.container{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.inline-list{
+    display: flex;
+    list-style: none;
+}
