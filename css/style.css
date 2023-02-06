@@ -21,6 +21,8 @@ Common
 .container{
     padding-left: 1.875rem;
     padding-right: 1.875rem;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .flex{
@@ -43,6 +45,15 @@ Common
 
 .br{
     border-radius: 30px;
+}
+
+.pic{
+    width: 100%;
+    display: block;
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 /*
@@ -73,6 +84,18 @@ Main
 *******************************
 */
 
+@media screen and (min-width: 768px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        width: 70%;
+    }
+}
+
 /*FUNCTIONS*/
 
 #functions{
@@ -88,7 +111,7 @@ Main
 
 @media screen and (min-width: 768px) {
     #functions .col{
-        width: calc(100% / 3);
+        width: calc(100% / 3 );
     }
 
     #functions .col:first-child{
@@ -131,7 +154,7 @@ Main
 
 #testimonial .card{
     background-color: var(--secondary-color);
-    padding: .3125rem;
+    padding: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -140,10 +163,21 @@ Main
     }
 }
 
+@media screen and (min-width: 768px) {
+    #testimonial .card .photo{
+        width: 30%;
+    }
+}
+
 /* BENEFIT */
 
-#benefit .container{
+#benefit{
     background-color: var(--secondary-color);
+}
+
+#benefit .box{
+    background-color: white;
+    padding: 30px;
 }
 
 @media screen and (min-width: 768px) {
