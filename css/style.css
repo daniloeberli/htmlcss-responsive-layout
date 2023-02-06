@@ -9,9 +9,9 @@ Reset
 }
 
 :root{
-    --first-color: ;
-    --first-color-light: ;
-    --secondary-colo: ;
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color: #9792e4;
 }
 
 /*
@@ -34,4 +34,151 @@ Common
 .inline-list{
     display: flex;
     list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.br{
+    border-radius: 30px;
+}
+
+/*
+Header
+*/
+
+header{
+    background-color: var(--first-color);
+}
+
+header .main-nav{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    header .main-nav{
+        display: block;
+    }
+
+    header .hamburger{
+        display: none;
+    }
+}
+
+/*
+*******************************
+Main
+*******************************
+*/
+
+/*FUNCTIONS*/
+
+#functions{
+    margin: 1rem 0 2rem 0;
+}
+
+#functions .col{
+    width: 100%;
+    background-color: var(--first-color-light);
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #functions .col{
+        width: calc(100% / 3);
+    }
+
+    #functions .col:first-child{
+        width: calc((100% / 3)*2);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #functions .col{
+        display: flex;
+    }
+
+}
+
+/* SECOND */
+
+#second{
+    background-color: var(--secondary-color);
+}
+
+#second div:nth-child(2){
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    #second .container{
+        display: flex;
+        align-items: flex-end;
+        
+    }
+}
+
+#second .container{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* TESTIMONIAL*/
+
+#testimonial .card{
+    background-color: var(--secondary-color);
+    padding: .3125rem;
+}
+
+@media screen and (min-width: 768px) {
+    #testimonial .card{
+        display: flex;
+    }
+}
+
+/* BENEFIT */
+
+#benefit .container{
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    #benefit .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefit .box{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #benefit .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefit .box{
+        width: calc(100% / 3);
+    }
+}
+
+/* ABOUT US */
+
+@media screen and (min-width: 768px) {
+    
+    #about-us .container{
+        display: flex;
+    }
+
+    #about-us .col{
+        width: 50%;
+    }
 }
