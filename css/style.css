@@ -141,7 +141,14 @@ Main
     #second .container{
         display: flex;
         align-items: flex-end;
+        width: 60%;
         
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #second .container > *{
+        width: calc(100% / 2);
     }
 }
 
@@ -155,6 +162,7 @@ Main
 #testimonial .card{
     background-color: var(--secondary-color);
     padding: 1.25rem;
+    margin: 1rem 0 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -197,6 +205,7 @@ Main
     #benefit .wrapper{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     #benefit .box{
